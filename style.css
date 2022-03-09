@@ -88,11 +88,12 @@ button:hover{
 }
 .dates{
     color: rgba(46, 46, 54, 0.1);
-    font-size: larger;
+    font-size: x-large;
     font-weight: 900;
     font-family: 'Poppins', sans-serif;
 
 }
 .dates:hover{
     color: rgba(46, 46, 54);
+
 }
