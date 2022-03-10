@@ -9,7 +9,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    
     padding-top: 25vh;
 }
 .common{
@@ -79,21 +78,53 @@ button:hover{
     font-size: larger;
     font-weight: 900;
     transition: 0.1s;
-    font-size: 35px;
-    color: rgb(19, 44, 63);
+    font-size: 30px;
+    color: rgb(35, 54, 68);
 
 }
 .monthSelector:hover{
     transform: scale(1.8);
 }
 .dates{
-    color: rgba(46, 46, 54, 0.1);
+    color: rgba(9, 9, 77, 0.1);
     font-size: x-large;
     font-weight: 900;
     font-family: 'Poppins', sans-serif;
 
+
 }
 .dates:hover{
     color: rgba(46, 46, 54);
+    cursor: pointer;
+    /* visibility: visible;
+    opacity: 1; */
+    
 
 }
+.dates::before{
+    background-color: rgba(47, 212, 102, 0);
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    color: rgb(27, 11, 73);
+    position: relative;
+    top: -30px;
+    left: 90px;
+    content: attr(title);
+    display: none;
+}
+.dates:hover::before{
+    display: inline-block;
+}
+/* .dates li {
+    position: relative;
+    top: -100px;
+    left: 50px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    background-color: antiquewhite;
+    list-style: none;
+    visibility: hidden;
+    opacity: 0;
+} */
