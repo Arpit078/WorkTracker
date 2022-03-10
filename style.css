@@ -102,19 +102,22 @@ button:hover{
 
 }
 .dates::before{
-    background-color: rgba(47, 212, 102, 0);
-    height: 100px;
-    width: 100px;
-    border: 2px solid white;
-    color: rgb(27, 11, 73);
+    background: linear-gradient(rgb(15, 12, 15,0.5) , rgb(13, 13, 59,0.5));
+    /* height: 100px;
+    width: 100px; */
+    /* border: 2px solid white; */
+    border-radius: 7px;
+    padding: 5px;
+    color: rgba(240, 248, 255, 0.582);
     position: relative;
     top: -30px;
     left: 90px;
+
     content: attr(title);
     display: none;
 }
 .dates:hover::before{
-    display: inline-block;
+    display:inline-block;
 }
 /* .dates li {
     position: relative;
@@ -128,3 +131,4 @@ button:hover{
     visibility: hidden;
     opacity: 0;
 } */
+
