@@ -1,4 +1,5 @@
 const datebtn = document.getElementsByClassName("dates")
+const t = document.getElementById("todo").innerHTML
 // function clicked(){
 //     console.log("the button has been clicked")
 //     // day1block.innerHTML = '<h1>hemlo</h1>'
@@ -12,10 +13,12 @@ function pop(){
     console.log("hemlo")
     const newDiv = document.createElement("div")
     const overlay = document.createElement("div")
+    newDiv.innerHTML = t
     newDiv.classList.add("popup")
     overlay.classList.add("overlay")
     document.body.append(newDiv)
     document.body.append(overlay)
+    // newDiv.innerHTML = "<div class="container"><div class="head"><h1>hello</h1></div><div class="body"><h2>this is supposed to have content</h2></div></div>"
     overlay.addEventListener("click" , function remove(){
         document.body.removeChild(newDiv)
         document.body.removeChild(overlay)

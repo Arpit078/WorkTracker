@@ -139,15 +139,20 @@ button:hover{
 .popup{
     height: 500px;
     width: 500px;
-    filter: blur();
-    background: linear-gradient(rgb(15, 12, 15,0.9) , rgb(13, 13, 59,0.9));
-    border-radius: 5px;
+    /* filter: blur(); */
+    background: linear-gradient(rgba(99, 89, 99, 0.9) , rgb(13, 13, 59,0.9));
+    border-radius: 10px;
     position: fixed;
-    top: 25vh;
-    left: 35vw;
+    top: 22vh;
+    left: 33.9vw;
     z-index: 10;
     transform: scale(1);
     transition: 0.5s;
+    box-shadow: 0px 0px 50px 10px black;
+    font-size: xx-large;
+    font-family: 'Poppins', sans-serif;
+    color: antiquewhite;
+
 }
 .overlay{
     position:fixed;
@@ -156,4 +161,12 @@ button:hover{
     left: 0;
     bottom: 0;
     background-color: rgb(0,0,0,0.5);
+}
+#todo{
+    display: none;
+}
+.dummy{
+    position: relative;
+    top: 8rem;
+    left: 40px;
 }
