@@ -74,20 +74,21 @@ button:hover{
     border: none;
     width: 70px;
     height: 20vh;
-    position: fixed;
+    position: absolute;
     left: 15vw;
     top: 45vh ;
     font-family: 'Poppins', sans-serif;
-    font-size: larger;
+    font-size: 50px;
     font-weight: 900;
     transition: 0.1s;
-    font-size: 30px;
     color: rgb(35, 54, 68);
+    
 
 }
 .monthSelector:hover{
-    transform: scale(1.8);
+    color: rgb(59, 42, 19);
     cursor: pointer;
+    transform: scale(1);
 }
 .dates{
     color: rgba(9, 9, 77, 0.1);
@@ -142,8 +143,8 @@ button:hover{
     background: linear-gradient(rgb(15, 12, 15,0.9) , rgb(13, 13, 59,0.9));
     border-radius: 5px;
     position: fixed;
-    top: 200px;
-    left: 580px;
+    top: 25vh;
+    left: 35vw;
     z-index: 10;
     transform: scale(1);
     transition: 0.5s;
