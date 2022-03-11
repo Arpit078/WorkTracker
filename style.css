@@ -113,7 +113,7 @@ button:hover{
     top: -40px;
     left: 100px;
 
-    content: attr(title);
+    content: attr(data-tooltip);
     display: none;
 }
 .dates:hover::before{
