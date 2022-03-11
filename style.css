@@ -109,9 +109,9 @@ button:hover{
     border-radius: 7px;
     padding: 5px;
     color: rgba(240, 248, 255, 0.582);
-    position: relative;
-    top: -30px;
-    left: 90px;
+    position: absolute;
+    top: -40px;
+    left: 100px;
 
     content: attr(title);
     display: none;
