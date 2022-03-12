@@ -17,7 +17,7 @@ function pop(){
     newDiv.classList.add("popup")
     overlay.classList.add("overlay")
     VanillaTilt.init(newDiv, {
-		max: 25,
+		max: 5,
 		speed: 800
 	})
     document.body.append(newDiv)

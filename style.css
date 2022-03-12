@@ -174,3 +174,16 @@ button:hover{
     -moz-user-select: none;
     -ms-user-select: none;
 }
+#myInput{
+    border-radius: 4px;
+    height: 30px;
+    width: 230px;
+    box-shadow: 5px 5px 8px rgb(152, 243, 66);
+    border: none;
+    margin-left: 25%;
+    background-color:rgb(1, 48, 3) ;
+    color: antiquewhite;
+    font-size: large;
+    font-family: poppins , sans-serif;
+    
+}
