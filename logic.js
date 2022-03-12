@@ -16,6 +16,10 @@ function pop(){
     newDiv.innerHTML = t
     newDiv.classList.add("popup")
     overlay.classList.add("overlay")
+    VanillaTilt.init(newDiv, {
+		max: 25,
+		speed: 800
+	})
     document.body.append(newDiv)
     document.body.append(overlay)
     // newDiv.innerHTML = "<div class="container"><div class="head"><h1>hello</h1></div><div class="body"><h2>this is supposed to have content</h2></div></div>"
