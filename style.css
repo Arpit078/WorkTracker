@@ -185,5 +185,19 @@ button:hover{
     color: antiquewhite;
     font-size: large;
     font-family: poppins , sans-serif;
-    
+}
+.addBtn{
+    margin-left: 50px;
+    position: fixed;
+    top: 88px;
+    color: rgb(127, 255, 165);
+}
+.addBtn:hover{
+    color: greenyellow;
+    filter: blur(0.7px);
+    cursor: pointer;
+}
+#heading{
+    color: greenyellow;
+    filter: blur(0.8px);
 }
