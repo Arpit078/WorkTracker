@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/heatmap_ico.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
     
     <title>Work-HeatMap</title>
 </head>
@@ -26,7 +27,7 @@
             <button class="weekDay">Fri</button>
             <button class="weekDay">Sat</button>
             <button class="weekDay">Sun</button>
-            <button class="darkest dates one" data-tooltip="01/03/22 done:5/5" data-tilt >01</button>
+            <button class="darkest dates one" data-tooltip="01/03/22 done:5/5" >01</button>
             <button class="common dates" data-tooltip="02/03/22 done:2.5/5">02</button>
             <button class="lightest dates" data-tooltip="03/03/22 done:1/5">03</button>
             <button class="common dates"  data-tooltip="04/03/22 done:2.5/5">04</button>
@@ -61,21 +62,15 @@
         </div>
 
     </div>
-    <!-- <div class="overlay"></div> -->
-    <div id="todo">
+    <div class="overlay" onclick="closeModal()"></div>
+    <div id="todo" data-tilt>
         <div id="myDIV" class="header">
             <h2 style="margin:5px" id="heading">TODO</h2>
-            <input type="text" id="myInput" placeholder="">
-            <span class="addBtn">Add</span>
+            <input type="text" id="myInput" placeholder="enter" value="">
+            <span id="addBtn" onclick="editList()">Add</span>
         </div>
           
           <ul id="myUL">
-            <li>go play</li>
-            <li class="checked">study for endsem</li>
-            <li>Meet Akash</li>
-            <li>Buy eggs</li>
-            <li>Read 5 pages from 5 little pigs</li>
-            <li>Organize study</li>
             
           </ul>
     </div>

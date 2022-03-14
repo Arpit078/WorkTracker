@@ -3,6 +3,7 @@ body{
     /* width: 100vw; */
     background: linear-gradient(rgb(132, 228, 231) , rgb(121, 248, 121));
     
+    
 }
 .flexbox{
     
@@ -156,6 +157,7 @@ button:hover{
 
 }
 .overlay{
+    display: none;
     position:fixed;
     top: 0;
     right: 0;
@@ -165,6 +167,21 @@ button:hover{
 }
 #todo{
     display: none;
+    height: 500px;
+    width: 500px;
+    /* filter: blur(); */
+    background: linear-gradient(rgba(62, 101, 102, 0.8) , rgba(58, 105, 58, 0.8));
+    border-radius: 10px;
+    position: fixed;
+    top: 22vh;
+    left: 33.9vw;
+    z-index: 10;
+    transition: 0.5s;
+    transform: scale(1);
+    box-shadow: 0px 0px 50px 10px black;
+    font-size: xx-large;
+    font-family: 'Poppins', sans-serif;
+    color: antiquewhite;
 }
 .dummy{
     position: relative;
@@ -186,18 +203,26 @@ button:hover{
     font-size: large;
     font-family: poppins , sans-serif;
 }
-.addBtn{
+#addBtn{
     margin-left: 50px;
     position: fixed;
     top: 88px;
     color: rgb(127, 255, 165);
 }
-.addBtn:hover{
+#addBtn:hover{
     color: greenyellow;
     filter: blur(0.7px);
     cursor: pointer;
 }
 #heading{
     color: greenyellow;
-    filter: blur(0.8px);
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700px;
+}
+.todoElements{
+    font-family: poppins , sans-serif;
+    color: aliceblue;
+}
+.todoElements::before{
+    content: "";
 }
