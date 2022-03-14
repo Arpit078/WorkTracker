@@ -1,0 +1,16 @@
+.popup{
+    height: 500px;
+    width: 500px;
+    /* filter: blur(); */
+    background: linear-gradient(rgba(62, 101, 102, 0.8) , rgba(58, 105, 58, 0.8));
+    border-radius: 10px;
+    position: fixed;
+    top: 22vh;
+    left: 33.9vw;
+    z-index: 10;
+    transition: 0.5s;
+    transform: scale(1);
+    box-shadow: 0px 0px 50px 10px black;
+    font-size: xx-large;
+    font-family: 'Poppins', sans-serif;
+    color: antiquewhite;}

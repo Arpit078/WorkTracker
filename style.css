@@ -138,24 +138,6 @@ button:hover{
     opacity: 0;
 } */
 
-.popup{
-    height: 500px;
-    width: 500px;
-    /* filter: blur(); */
-    background: linear-gradient(rgba(62, 101, 102, 0.8) , rgba(58, 105, 58, 0.8));
-    border-radius: 10px;
-    position: fixed;
-    top: 22vh;
-    left: 33.9vw;
-    z-index: 10;
-    transition: 0.5s;
-    transform: scale(1);
-    box-shadow: 0px 0px 50px 10px black;
-    font-size: xx-large;
-    font-family: 'Poppins', sans-serif;
-    color: antiquewhite;
-
-}
 .overlay{
     display: none;
     position:fixed;
@@ -176,12 +158,19 @@ button:hover{
     top: 22vh;
     left: 33.9vw;
     z-index: 10;
-    transition: 0.5s;
+    transition: 1s;
     transform: scale(1);
     box-shadow: 0px 0px 50px 10px black;
     font-size: xx-large;
     font-family: 'Poppins', sans-serif;
     color: antiquewhite;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.2s;
+    animation-name: animatetop;
+    animation-duration: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 .dummy{
     position: relative;
@@ -216,7 +205,8 @@ button:hover{
 }
 #heading{
     color: greenyellow;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Maven Pro', sans-serif;
+/* font-family: 'Shadows Into Light', cursive; */
     font-weight: 700px;
 }
 .todoElements{
@@ -225,4 +215,36 @@ button:hover{
 }
 .todoElements::before{
     content: "";
+}
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+@keyframes animatetop {
+      0% {
+        transform: scale(0) rotate(-5deg);
+      }
+      20% {
+        transform: scale(0.2) rotate(-0deg);
+      }
+      40% {
+        transform: scale(0.4) rotate(5deg);
+      }
+      50%{
+        transform: scale(0.5) rotate(0deg);
+      }
+      80% {
+        transform: scale(0.8) rotate(-5deg);
+      }
+      100% {
+        transform: scale(1) rotate(0deg);
+      }
+    }
+.closeModal{
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
 }

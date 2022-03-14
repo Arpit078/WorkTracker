@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/heatmap_ico.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     
     <title>Work-HeatMap</title>
 </head>
@@ -63,16 +64,17 @@
 
     </div>
     <div class="overlay" onclick="closeModal()"></div>
-    <div id="todo" data-tilt>
+    <div id="todo" data-tilt data-tilt-max="8" data-tilt-speed="4000">
         <div id="myDIV" class="header">
-            <h2 style="margin:5px" id="heading">TODO</h2>
-            <input type="text" id="myInput" placeholder="enter" value="">
+            <h2 style="margin:5px" id="heading">2DO</h2>
+            <input type="text" id="myInput" placeholder="" autocomplete="off">
             <span id="addBtn" onclick="editList()">Add</span>
         </div>
           
           <ul id="myUL">
             
           </ul>
+        <button class="closeModal" onclick="closeModal()"><img src="images/close.svg" alt="×"></button>
     </div>
       
 <script src="logic.js"></script>
