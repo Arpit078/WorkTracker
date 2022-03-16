@@ -52,14 +52,16 @@ for (var i = 0; i < datebtn.length; i++) {
 //adding elements in the todo list
 function editList(){
     const newToDo = document.createElement("li")
-    var inputValue =  todoInput.value
+    var inputValue =  todoInput.value 
     console.log(inputValue)
     newToDo.innerHTML= inputValue
     newToDo.classList.add("todoElements")
     todoList.appendChild(newToDo)
 
-
 }
+//adding checked strikethrough for element when done
+var listItem = document.querySelector(".todoElements")
+function checked(){listItem.classList.toggle("checked")}
+for (var i = 0; i < listItem.length; i++) {
+    listItem[i].addEventListener('click', checked())}
 
-//practice
-// one.addEventListener("click" , pop)
