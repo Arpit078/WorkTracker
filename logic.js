@@ -53,15 +53,47 @@ for (var i = 0; i < datebtn.length; i++) {
 function editList(){
     const newToDo = document.createElement("li")
     var inputValue =  todoInput.value 
-    console.log(inputValue)
-    newToDo.innerHTML= inputValue
+    // console.log(inputValue)
+    if(inputValue === ""){
+        return
+    }
+    else{
+        newToDo.innerHTML= inputValue
+    }
+    
     newToDo.classList.add("todoElements")
     todoList.appendChild(newToDo)
 
 }
-//adding checked strikethrough for element when done
-var listItem = document.querySelector(".todoElements")
-function checked(){listItem.classList.toggle("checked")}
-for (var i = 0; i < listItem.length; i++) {
-    listItem[i].addEventListener('click', checked())}
 
+//adding checked strikethrough for element when done
+// var listItem = document.querySelector(".todoElements")
+// function checked(){listItem.classList.toggle("checked")}
+// for (var i = 0; i < listItem.length; i++) {
+//     listItem[i].addEventListener('click', checked())}
+
+
+// window.addEventListener("keydown", function enter(evt){
+//     if(evt.key = "Enter"){
+//         console.log("pressed enter")
+//         editList()
+//         todoInput.value = ""
+//     }
+//     else{
+//         return
+//     }
+
+// })
+
+
+
+//adding elements in the todo with enter
+todoInput.addEventListener("keyup" , e => {
+    e.preventDefault()
+    if(e.keyCode === 13){
+        console.log("pressed Enter")
+        editList()
+        todoInput.value = ""
+
+    }
+})
