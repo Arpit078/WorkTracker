@@ -63,6 +63,8 @@ function editList(){
     
     newToDo.classList.add("todoElements")
     todoList.appendChild(newToDo)
+    todoInput.value=""
+    // newToDo.addEventListener("onclick" , newToDo.classList.add("checked"))
 
 }
 
@@ -93,7 +95,8 @@ todoInput.addEventListener("keyup" , e => {
     if(e.keyCode === 13){
         console.log("pressed Enter")
         editList()
-        todoInput.value = ""
 
     }
+        
 })
+        
