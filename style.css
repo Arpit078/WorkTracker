@@ -256,3 +256,25 @@ ul{
 .checked{
     text-decoration: line-through;
 }
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+.close:hover {
+    background-color: #f44336;
+    color: white;
+  }
+/* #del:hover{
+      transform: scale(1.5);
+      transition: 0.2s;
+      cursor: pointer;
+  } */
+#helped:hover{
+    /* background-color:rgb(1, 48, 3,0.5); */
+    box-shadow: 5px 5px 8px rgb(1, 48, 3,0.5);
+    border-radius: 10px;
+    margin-right: 50px;
+}

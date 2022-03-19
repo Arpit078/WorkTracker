@@ -51,14 +51,17 @@ for (var i = 0; i < datebtn.length; i++) {
 }
 //adding elements in the todo list
 function editList(){
-    const newToDo = document.createElement("li")
+    newToDo = document.createElement("li")
     var inputValue =  todoInput.value 
     // console.log(inputValue)
+    
     if(inputValue === ""){
         return
     }
     else{
-        newToDo.innerHTML= inputValue
+        newToDo.innerHTML= inputValue //+ "<img src=\"images/delete.png\"alt=\"\" width=\"20px\" height=\"20px\" id= \"del\"style= \"position:relative;left:30px;top:2px\">"
+        newToDo.draggable = "true"
+        newToDo.id = "helped"
     }
     
     newToDo.classList.add("todoElements")
