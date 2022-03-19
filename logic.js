@@ -6,7 +6,7 @@ const t = document.getElementById("todo")
 const overlay = document.querySelector(".overlay")
 var todoadd = document.getElementById("addBtn")
 var todoInput = document.querySelector("#myInput")
-const todoList = document.getElementById("myUL")
+var todoList = document.querySelector('ul')
 // function clicked(){
 //     console.log("the button has been clicked")
 //     // day1block.innerHTML = '<h1>hemlo</h1>'
@@ -67,6 +67,11 @@ function editList(){
     // newToDo.addEventListener("onclick" , newToDo.classList.add("checked"))
 
 }
+todoList.addEventListener("click" , function(event){
+    if(event.target.tagName === "LI"){
+        event.target.classList.toggle("checked")
+    }
+},false)
 
 //adding checked strikethrough for element when done
 // var listItem = document.querySelector(".todoElements")
@@ -99,4 +104,3 @@ todoInput.addEventListener("keyup" , e => {
     }
         
 })
-        
