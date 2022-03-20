@@ -278,3 +278,18 @@ ul{
     border-radius: 10px;
     margin-right: 50px;
 }
+#dustbin{
+    height: 75px;
+    width: 75px;
+    position: relative;
+    top: 180px;
+    left : 200px;
+    transition: 50ms;
+    display: none;
+}
+#dustbin:hover{
+    transform: scale(1.5);
+    /* box-shadow: 5px 5px 8px rgb(1, 48, 3,0.5);
+    border: none;
+    border-radius: 10px;*/
+} 

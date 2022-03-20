@@ -107,3 +107,4 @@ todoInput.addEventListener("keyup" , e => {
     }
         
 })
+//add delete functionality with drag and drop
