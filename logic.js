@@ -108,3 +108,20 @@ todoInput.addEventListener("keyup" , e => {
         
 })
 //add delete functionality with drag and drop
+dustbin = document.querySelector("#dustbin")
+todoList.addEventListener("dragstart" , function(event){
+    if(event.target.tagName === "LI"){
+        event.target.classList.add("dragging")
+        dustbin.style.display = "block"
+    }
+},false)
+todoList.addEventListener("dragend" , function(event){
+    if(event.target.tagName === "LI"){
+        event.target.classList.remove("dragging")
+        dustbin.style.display = "none"
+
+    }
+},false)
+dustbin.addEventListener("dragover" , ()=>{
+    console.log("drag over")
+})

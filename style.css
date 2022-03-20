@@ -293,3 +293,6 @@ ul{
     border: none;
     border-radius: 10px;*/
 } 
+.dragging{
+    opacity: 0.5;
+}
