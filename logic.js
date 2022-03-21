@@ -122,7 +122,8 @@ todoList.addEventListener("dragend" , function(event){
 
     }
 },false)
-dustbin.addEventListener("dragover" , ()=>{
+dustbin.addEventListener("dragover" , function(event){
+    event.preventDefault()
     dustbin.style.transform = "scale(1.1)"
     const currentdrag = document.querySelector(".dragging")
     todoList.removeChild(currentdrag)
