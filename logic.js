@@ -118,11 +118,12 @@ todoList.addEventListener("dragstart" , function(event){
 todoList.addEventListener("dragend" , function(event){
     if(event.target.tagName === "LI"){
         event.target.classList.remove("dragging")
-        dustbin.style.display = "none"
+        // dustbin.style.display = "none"
 
     }
 },false)
-dustbin.addEventListener("dragover" , ()=>{
+dustbin.addEventListener("dragover" , function(e){
+    e.preventDefault()
     dustbin.style.transform = "scale(1.1)"
     const currentdrag = document.querySelector(".dragging")
     todoList.removeChild(currentdrag)
@@ -138,3 +139,5 @@ dustbin.addEventListener("dragleave" , ()=>{
     // dustbin.style.display = "none"
 
 })
+//function for progress bar
+    

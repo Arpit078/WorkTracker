@@ -168,8 +168,7 @@ button:hover{
     -webkit-animation-duration: 0.2s;
     animation-name: animatetop;
     animation-duration: 0.2s;
-    overflow: hidden;
-    overflow-y: scroll;
+    
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -186,19 +185,21 @@ button:hover{
     border-radius: 4px;
     height: 30px;
     width: 230px;
+    position: absolute;
+    top: 76px;
     box-shadow: 5px 5px 8px rgb(152, 243, 66);
     border: none;
     outline: none;
-    margin-left: 25%;
+    margin-left: 120px;
     background-color:rgb(1, 48, 3);
     color: antiquewhite;
     font-size: large;
     font-family: poppins , sans-serif;
 }
 #addBtn{
-    margin-left: 20px;
     position: absolute;
     top: 76px;
+    left: 370px;
     height: 20px;
     width: 20px;
     color: rgb(127, 255, 165);
@@ -212,6 +213,8 @@ button:hover{
     font-family: 'Maven Pro', sans-serif;
 /* font-family: 'Shadows Into Light', cursive; */
     font-weight: 700px;
+    position: absolute;
+    left: 20px;
 }
 .todoElements{
     font-family: poppins , sans-serif;
@@ -281,13 +284,15 @@ ul{
     margin-right: 50px;
 }
 #dustbin{
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     position:absolute;
-    top: 78px;
+    top: 75px;
     right : 40px;
-    transition: 50ms;
+    transition: 5ms;
     /* display: none; */
+    /* background-color: rgb(152, 243, 66,0.4);
+    box-shadow: 5px 5px 25px rgb(152, 243, 66); */
 }
 #dustbin:hover{
     transform: scale(1.1);
@@ -300,4 +305,21 @@ ul{
 }
 ::-webkit-scrollbar{
     width: 10px;
+}
+#progressBar{
+    width: 55%;
+    height: 10px;
+    background: linear-gradient(to right ,rgb(2, 65, 94),rgb(204, 180, 43));
+    position: absolute;
+    left: 180px;
+    top: 30px;
+    border-radius: 5px;
+}
+.list{
+    position: absolute;
+    top: 110px;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 390px;
+    /* background-color: #f44336; */
 }

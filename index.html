@@ -67,14 +67,19 @@
     <div id="todo" data-tilt data-tilt-max="5" data-tilt-speed="10000">
         <div id="myDIV" class="header">
             <h2 style="margin:5px" id="heading">ToDo</h2>
+            <div id="progressBar">
+                <div id="progressAnimation"></div>
+            </div>
             <input type="text" id="myInput" placeholder="" autocomplete="off">
             <span id="addBtn" onclick="editList()"><img src="images/add.png" alt=""></span>
+            <button class="closeModal" onclick="closeModal()"><img src="images/close.svg" alt="×"></button>
         </div>
-          
+        <div class="list">
           <ul id="myUL">
           </ul>
-          <img src="images/delete.png" alt="" id="dustbin">
-        <button class="closeModal" onclick="closeModal()"><img src="images/close.svg" alt="×"></button>
+        </div>
+        <img src="images/delete.png" alt="" id="dustbin">
+        
     </div>
       
 <script src="logic.js"></script>
