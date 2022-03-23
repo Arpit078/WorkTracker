@@ -161,13 +161,15 @@ button:hover{
     transition: .3s;
     transform: scale(1);
     box-shadow: 0px 0px 50px 10px black;
-    font-size: xx-large;
+    font-size: 30px;
     font-family: 'Poppins', sans-serif;
     color: antiquewhite;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.2s;
     animation-name: animatetop;
     animation-duration: 0.2s;
+    overflow: hidden;
+    overflow-y: scroll;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -195,8 +197,8 @@ button:hover{
 }
 #addBtn{
     margin-left: 20px;
-    position: fixed;
-    top: 78px;
+    position: absolute;
+    top: 76px;
     height: 20px;
     width: 20px;
     color: rgb(127, 255, 165);
@@ -281,18 +283,21 @@ ul{
 #dustbin{
     height: 30px;
     width: 30px;
-    position: absolute;
-    bottom: 1px;
-    right : 2px;
+    position:absolute;
+    top: 78px;
+    right : 40px;
     transition: 50ms;
     /* display: none; */
 }
 #dustbin:hover{
-    transform: scale(1.5);
+    transform: scale(1.1);
     /* box-shadow: 5px 5px 8px rgb(1, 48, 3,0.5);
     border: none;
     border-radius: 10px;*/
 } 
 .dragging{
     opacity: 0.5;
+}
+::-webkit-scrollbar{
+    width: 10px;
 }
