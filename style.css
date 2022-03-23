@@ -279,13 +279,13 @@ ul{
     margin-right: 50px;
 }
 #dustbin{
-    height: 75px;
-    width: 75px;
+    height: 30px;
+    width: 30px;
     position: absolute;
     bottom: 1px;
     right : 2px;
     transition: 50ms;
-    display: none;
+    /* display: none; */
 }
 #dustbin:hover{
     transform: scale(1.5);

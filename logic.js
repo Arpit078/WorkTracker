@@ -122,13 +122,19 @@ todoList.addEventListener("dragend" , function(event){
 
     }
 },false)
-dustbin.addEventListener("dragover" , function(event){
-    event.preventDefault()
+dustbin.addEventListener("drop" , ()=>{
     dustbin.style.transform = "scale(1.1)"
     const currentdrag = document.querySelector(".dragging")
     todoList.removeChild(currentdrag)
+    // currentdrag.style.display = "none"
+    
+    // 
+    
 })
 dustbin.addEventListener("dragleave" , ()=>{
+    const currentdrag = document.querySelector(".dragging")
     dustbin.style.transform = "scale(1)"
-    dustbin.style.display = "none"
+    currentdrag.style.display = "block"
+    // dustbin.style.display = "none"
+
 })
