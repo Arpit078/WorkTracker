@@ -70,9 +70,53 @@ function editList(){
     // newToDo.addEventListener("onclick" , newToDo.classList.add("checked"))
 
 }
+
+
 todoList.addEventListener("click" , function(event){
     if(event.target.tagName === "LI"){
         event.target.classList.toggle("checked")
+        checkedArray = [...document.getElementsByClassName("checked")]
+        total = document.getElementsByTagName("li")
+        checkedNumber = checkedArray.length
+        totalNumber = total.length
+        console.log(totalNumber , checkedNumber)
+        percentComplete = checkedNumber/totalNumber
+        let commonGuys = document.getElementsByClassName("common")
+        let darkGuys = document.getElementsByClassName("darkest")
+        let lightGuys = document.getElementsByClassName("lightest")
+        if(percentComplete>= 0.4){
+            // commonGuys[1].style.backgroundColor = "blue"
+            for (var i = 0; i < commonGuys.length; i++) {
+                commonGuys[i].style.backgroundColor = "rgb(33, 206, 76)"
+            }
+            
+        }
+        if(percentComplete>= 0.8){
+            // commonGuys[1].style.backgroundColor = "blue"
+            for (var i = 0; i < darkGuys.length; i++) {
+                darkGuys[i].style.backgroundColor = "rgb(7, 82, 26)"
+                darkGuys[i].style.border = "solid rgb(4, 48, 15)"
+            }
+            
+        }
+        if(percentComplete>= 0.1){
+            // commonGuys[1].style.backgroundColor = "blue"
+            for (var i = 0; i < lightGuys.length; i++) {
+                lightGuys[i].style.backgroundColor = "rgb(129, 241, 157)"
+                lightGuys[i].style.border = "solid rgb(85, 158, 103)"
+            }
+            
+        }
+
+        else{
+            for (var i = 0; i < 10000 ; i++) {
+                commonGuys[i].style.backgroundColor = "white"
+                lightGuys[i].style.backgroundColor = "white"
+                darkGuys[i].style.backgroundColor = "white"
+            }
+
+        }
+        
     }
 },false)
 
@@ -139,5 +183,23 @@ dustbin.addEventListener("dragleave" , ()=>{
     // dustbin.style.display = "none"
 
 })
+// const otherTodo = [...document.querySelectorAll("ul:not(.dragging)")]
+// for (var i = 0; i < otherTodo.length; i++) {
+//     otherTodo[i].addEventListener('dragover', function(event){
+//         event.preventDefault()
+//         console.log("working")
+//         const currentdrag = document.querySelector(".dragging")
+//         currentdrag.style.left = otherTodo.style.left
+//         currentdrag.style.top = otherTodo.style.top
+//         });
+// }
+
 //function for progress bar
-    
+// let checkedArray = [...document.getElementsByClassName("checked")]
+// console.log(checkedArray)
+
+
+
+
+
+
